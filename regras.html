@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Regras do Servidor</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0a0a10;
+  color: #fff;
+}
+
+/* ================= CONTAINER ================= */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ================= HERO ================= */
+.hero {
+  padding: 90px 0 70px;
+  text-align: center;
+  background:
+    radial-gradient(circle at top, rgba(155,92,255,.2), transparent 40%),
+    linear-gradient(180deg, #050507, #0a0a10);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero p {
+  margin-top: 15px;
+  color: #bdbdbd;
+  max-width: 720px;
+  margin-inline: auto;
+  line-height: 1.7;
+}
+
+/* ================= GRID DE REGRAS ================= */
+.rules {
+  padding: 70px 0;
+}
+
+.rules-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* ================= CARD ================= */
+.rule {
+  background: #11111b;
+  border: 1px solid rgba(155,92,255,.25);
+  border-radius: 18px;
+  padding: 34px;
+  transition: 0.3s;
+}
+
+.rule:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(0,0,0,.6);
+}
+
+.rule span {
+  display: block;
+  font-size: 0.85rem;
+  color: #9b5cff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.rule h2 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.rule p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #d9d9d9;
+}
+
+.rule ul {
+  list-style: none;
+  margin-top: 14px;
+}
+
+.rule li {
+  position: relative;
+  padding-left: 22px;
+  margin: 8px 0;
+  font-size: 0.92rem;
+  color: #eaeaea;
+}
+
+.rule li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #9b5cff;
+}
+
+/* ================= AVISO FINAL ================= */
+.notice {
+  margin-top: 60px;
+  background: #050507;
+  border-left: 4px solid #9b5cff;
+  padding: 28px;
+  border-radius: 12px;
+  color: #cfcfcf;
+  line-height: 1.7;
+}
+
+/* ================= BOTÃO ================= */
+.accept {
+  margin-top: 45px;
+  text-align: center;
+}
+
+.accept button {
+  background: linear-gradient(135deg, #9b5cff, #6f3cff);
+  border: none;
+  padding: 15px 38px;
+  border-radius: 35px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.accept button:hover {
+  transform: scale(1.05);
+}
+
+/* ================= FOOTER ================= */
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+/* ================= RESPONSIVO ================= */
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .rules-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+}
+
+/* CELULAR */
+@media (max-width: 768px) {
+
+  .hero {
+    padding: 65px 0 50px;
+  }
+
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .rules-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rule {
+    padding: 38px 32px;
+  }
+
+  .rule h2 {
+    font-size: 1.45rem;
+  }
+
+  .rule p,
+  .rule li {
+    font-size: 1rem;
+  }
+}
+
+/* CELULAR PEQUENO */
+@media (max-width: 480px) {
+  .container {
+    width: 94%;
+  }
+
+  .hero h1 {
+    font-size: 1.9rem;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1>Regras do Servidor</h1>
+    <p>Nosso servidor preza por roleplay sério, respeito mútuo e experiência imersiva.  
+    Leia atentamente — o desconhecimento das regras não isenta punições.</p>
+  </div>
+</section>
+
+<!-- REGRAS -->
+<section class="rules">
+  <div class="container">
+
+    <div class="rules-grid">
+
+      <div class="rule">
+        <span>REGRA 01</span>
+        <h2>🎭 Roleplay Geral</h2>
+        <p>
+          Todo jogador deve interpretar seu personagem como um cidadão real,
+          respeitando dor, medo, tempo de reação e consequências de suas ações.
+        </p>
+        <ul>
+          <li>Reagir de forma realista a ameaças e situações de risco</li>
+          <li>Valorizar a própria vida e a dos demais personagens</li>
+          <li>Evitar ações irreais, forçadas ou sem contexto RP</li>
+        </ul>
+      </div>
+
+      <div class="rule">
+        <span>REGRA 02</span>
+        <h2>🧠 Metagaming</h2>
+        <p>
+          É estritamente proibido utilizar qualquer informação obtida fora do
+          ambiente do jogo para obter vantagens dentro do roleplay.
+        </p>
+        <ul>
+          <li>Uso de Discord, lives, streams ou chats externos</li>
+          <li>Consultar mapas, nomes ou ações sem ter visto em RP</li>
+        </ul>
+      </div>
+
+      <div class="rule">
+        <span>REGRA 03</span>
+        <h2>🎮 Powergaming</h2>
+        <p>
+          Forçar mecânicas do jogo ou realizar ações que seriam impossíveis ou
+          irreais na vida real é proibido.
+        </p>
+        <ul>
+          <li>Escalar locais impossíveis ou abusar de animações</li>
+          <li>Ignorar ferimentos graves ou consequências físicas</li>
+        </ul>
+      </div>
+
+      <div class="rule">
+        <span>REGRA 04</span>
+        <h2>🔫 RDM & VDM</h2>
+        <p>
+          Qualquer agressão, assassinato ou atropelamento sem contexto válido
+          de roleplay será punido.
+        </p>
+        <ul>
+          <li>RDM: Matar sem motivo ou interação RP prévia</li>
+          <li>VDM: Usar veículos como arma intencionalmente</li>
+        </ul>
+      </div>
+
+      <div class="rule">
+        <span>REGRA 05</span>
+        <h2>🏦 Roubos</h2>
+        <p>
+          Roubos devem seguir regras específicas para manter equilíbrio e realismo
+          na experiência de jogo.
+        </p>
+        <ul>
+          <li>Exigida quantidade mínima de policiais online</li>
+          <li>Proibido roubar em áreas seguras ou zonas neutras</li>
+        </ul>
+      </div>
+
+      <div class="rule">
+        <span>REGRA 06</span>
+        <h2>🛡️ Facções</h2>
+        <p>
+          Facções precisam manter organização, hierarquia e respeito às regras
+          de guerra, território e convivência.
+        </p>
+        <ul>
+          <li>Guerras devem ter contexto RP bem definido</li>
+          <li>Ordens do líder devem ser respeitadas</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="notice">
+      <strong>📌 Observação Importante:</strong>  
+      A administração possui autoridade final em decisões não previstas neste
+      regulamento. Alegar desconhecimento das regras não isenta punições.
+    </div>
+
+  </div>
+</section>
+
+
+<footer>
+  © 2026 • Servidor Roleplay • Todos os direitos reservados
+</footer>
+
+</body>
+</html>

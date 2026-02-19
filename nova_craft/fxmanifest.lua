@@ -2,7 +2,7 @@
 
 author       '@seven7s.___'
 version      '1.0.0'
-description  'Script refeito pelos desenvolvedores da Nikito Community'
+description  '........'
 
 fx_version 'bodacious'
 game 'gta5'
@@ -30,5 +30,6 @@ server_scripts {
 
 -- Dump realizado pela ColdGG!
 -- https://discord.gg/coldgg
+
 
 -- Link Permanente: https://discord.gg/97NR97JmfF
